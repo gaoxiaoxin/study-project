@@ -1,17 +1,24 @@
-学习编写 Vue 组件的多种通信方式
+# vue-components-transfrom-data
 
-1. props/$emits
+## Project setup
+```
+npm install
+```
 
-2. $children/$parent
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-3. provide/reject
+### Compiles and minifies for production
+```
+npm run build
+```
 
-4. ref
+### Lints and fixes files
+```
+npm run lint
+```
 
-5. eventBus
-
-6. Vuex
-
-7. localStorage / sessionStorage
-
-8. $attrs 与 $listeners
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
