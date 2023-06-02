@@ -7,7 +7,7 @@
     <p>==========project传参========</p>
     <project-father></project-father>
     <p>==========$attr传参==========</p>
-    <attr-father></attr-father>
+    <attr-father :teacher="teacher"></attr-father>
   </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
     PropsFather,
     ProjectFather,
     AttrFather
+  },
+  data() {
+    return {
+      teacher: '小洪'
+    }
   }
 }
 </script>
