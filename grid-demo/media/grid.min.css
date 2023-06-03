@@ -1,0 +1,1 @@
+*{margin:0px;padding:0px}.content{display:grid;height:100vh;grid-template-areas:'left right';grid-template-columns:300px 1fr}.content .left-box{background-color:red;grid-area:'left'}.content .right-box{grid-area:'right';background-color:greenyellow}@media (max-width: 800px){.content{grid-template-areas:'left'  'right';grid-template-columns:1fr;grid-template-rows:'200px' '400px'}}
