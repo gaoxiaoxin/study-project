@@ -9,12 +9,23 @@ import { ref } from 'vue';
 
 // Option 格式
 export const useAlertStore = defineStore('alert', {
+  /**
+   * 类似于组件的 data，用来存储全局状态
+   * 1. 必须是函数, 因为这样是为了在服务端渲染的时候避免交叉请求导致的数据状态污染。
+   * 2. 必须是箭头函数，这样是为了更好的 Ts 类型推导
+   */
   state: () => ({
     count: 0,
   }),
+  /**
+   * 类似于组件的computed， 用来封装计算属性，有缓存功能
+   */
   getters: {
     double: (state) => state.count * 2,
   },
+  /**
+   * 类似于组件的methods，封装业务逻辑，修改state
+   */
   actions: {
     increment() {
       this.count++;
