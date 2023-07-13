@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 1fr;
+    width: 100%;
+    background-color: antiquewhite;
+
+    
+    .tabs {
+        background-color: aquamarine;
+        height: 100px;
+        width: 100%;
+        grid-column: span 6;
+    }
+    
+    .tools {
+        height: 400px;
+        grid-column: span 6;
+        .row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            .item {
+                height: 100px;
+                background-color: rosybrown;
+                grid-column: span 1;
+            }
+        }
+    }
+
+    
+}

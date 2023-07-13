@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    background: #f4cf47;
+    border: groove 10px red;
+    border-radius: 2em;
+}
